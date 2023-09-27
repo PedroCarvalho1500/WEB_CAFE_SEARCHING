@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% from 'bootstrap5/form.html' import render_form %}
+{% block title %}Cafe Added{% endblock %}
+
+{% block content %}
+    <body class="gradient-background2">
+        <a href="{{url_for('home')}}">
+            <button type="button" class="mx-auto p-2 btn btn-primary btn-lg">Return to Home</button>
+        </a>
+    
+        <a href="{{url_for('add_new_cafe')}}">
+            <button type="button" class="mx-auto p-2 btn btn-primary btn-lg">Add new Cafe</button>
+        </a>
+    </body>
+{% endblock %}
